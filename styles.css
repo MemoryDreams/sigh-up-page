@@ -1,0 +1,16 @@
+*, * ::before, * ::after {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("mountainview.png");
+    background-size: cover;
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Chrome                         */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
